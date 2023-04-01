@@ -1,0 +1,427 @@
+:root{
+  --one: #E0E1DD;
+  --two: #CAD2C5;
+  --three: #A7BEA9;
+  --four: #84A98C;
+  --five: #52796F;
+  --six: #354f52;
+  --seven: #2f3e46;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: var(--two);
+  color: var(--seven);
+  font-family: Poppins;
+  margin:0;
+  scroll-behavior:smooth;
+}
+
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: var(--three);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+nav li {
+  margin: 0 20px;
+}
+
+
+nav a {
+  color: var(--five);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--six);
+}
+
+nav .active {
+  color: var(--seven);
+}
+
+body {
+  padding-top: 80px;
+}
+
+.titleyay{
+  color: var(--five);
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#contact-us {
+  background-color: var(--two);
+  padding: 30px;  
+}
+
+#contact-us h2 {
+  text-align: center;
+  color: var(--seven);
+  margin-bottom: 50px;
+  font-size: 36px;
+
+}
+
+#contact-us form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact-us label {
+  color: var(--six);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contact-us input[type="text"],
+#contact-us input[type="email"],
+#contact-us textarea {
+  background-color: var(--one);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#contact-us input[type="text"]:focus,
+#contact-us input[type="email"]:focus,
+#contact-us textarea:focus {
+  outline: none;
+  box-shadow: 0 0 3px var(six);
+
+}
+
+#contact-us button[type="submit"] {
+  background-color: var(--three);
+  color: var(--six);
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-us button[type="submit"]:hover {
+  background-color: var(--four);
+}
+
+.parallax-container {
+  margin: 0;
+  position: relative;
+  text-align:center;
+  color:white;
+}
+
+.parallax{
+  width:100%;
+  height:auto;
+}
+        
+.front-image{
+  width:100%;
+  height:auto;
+  background-attachment: fixed;
+}
+
+.resource-radar{
+  text-align:center;
+  font-weight: strong;
+  font-size: 50px;
+  position:absolute;
+  bottom: 70%;
+  left:55%;
+  color: var(--seven);
+}
+
+.learn-more{
+  background-image: linear-gradient(to right, var(--two), var(--three));  
+  border:none;
+  position:absolute;
+  bottom:60%;
+  left:70%;
+  padding: 15px;
+  font-size: 20px;
+  color: var(--six);
+  font-family: Poppins;
+  border-radius: 10px;
+  transition: box-shadow 0.2s;
+}
+
+.learn-more:hover{
+  box-shadow: 0 3px 3px rgba(132,169,140,0.5);
+  background-position: right center; 
+  cursor: pointer;
+  
+}
+
+.learn-more:active{
+  background-image: linear-gradient(to right, var(--three), var(--five));  
+}
+
+
+select{
+  font-size: 16px;
+  color: black;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: var(--one);
+  border:none;
+  border-radius: 5px;
+  padding:10px;
+  
+}
+
+.logo {
+  height: 75px;
+  width: 75px
+}
+
+.parallax-container {
+  background-image: url("https://saaccionasostenibilidad.blob.core.windows.net/media/816094/argumentos-energias-renovables.jpg");
+  background-attachment: fixed;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+}
+
+.titles {
+  padding-left: 20px;
+  padding-top: 15px;
+  font-family: "Roboto Slab";
+}
+
+.renewable-resource-container{
+  display:inline-block; 
+  margin-left: 10%;
+  width:40%;
+}
+
+.energy-images{
+  object-fit: cover;
+  border-radius: 10%;
+  width: 75%;
+  height: 75%;
+}
+
+.paragraph {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 5%;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+.child-items{
+  height: 500px;
+  display:block;
+}
+
+.ENERGYENERGYENERGY{
+  display:block;
+  border-radius: 50%;
+  width:100%;
+  height: 500px;
+}
+
+.images-container{
+  display:inline-block;
+  margin-left: 6%;
+  width:40%;
+}
+
+.parallax-container-2 {
+  background-image: url("rr2.gif");
+  background-attachment: fixed;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+}
+
+.energy-buttons {
+  margin-top: 5%;
+  height: 100px;
+   width: 200px;
+  border-radius: 10px;
+  border: none;
+  font-weight:bold;
+  color: var(--seven);
+  font-size: 20px;
+  font-family: "Poppins";
+  transition: box-shadow 0.15s;
+}
+
+.energy-buttons:hover{
+  box-shadow: 5px 3px 3px rgb(47, 62, 70, 0.7);
+  cursor:pointer;
+}
+/* 
+.energy-button-column-1 {
+  padding-left: 42px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+} */
+/* 
+.energy-button-column-2 {
+  padding-left: 350px;
+  padding-right: 350px;
+} */
+
+.placeholders {
+  width: 30px;
+}
+
+.STRAWBERRY{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+
+}
+
+#solar-energy {
+  background-image: url("https://image.shutterstock.com/image-photo/beautiful-landscape-mountains-sunrise-view-260nw-527304829.jpg");
+  
+}
+
+#wind-energy {
+  background-image: url("https://www.ge.com/renewableenergy/sites/default/files/2020-01/wind%20energy.jpg");
+}
+
+#hydroelectric-energy {
+  background-image: url("https://img.freepik.com/premium-photo/blue-water-surface-with-bright-sun-light-reflections_55716-1117.jpg");
+}
+
+#geothermal-energy {
+  background-image: url("https://ychef.files.bbci.co.uk/976x549/p098q3jj.jpg");
+}
+
+#bioenergyy {
+  background-image: url("https://watertreatmentservices.co.uk/wp-content/uploads/2016/01/biomass-energy-renewable-energy-source.jpg");
+}
+
+.buttons-container{
+  display:flex;
+  flex-direction:row;
+  align-content:center;
+  justify-content:space-between;
+  gap: 5px;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+
+}
+
+.pizza{
+  height:15%;
+}
+
+.reggie{
+  
+}
+
+.tiny{
+  font-size: 5px;
+}
+
+.resources {
+  margin-left: 20px;
+}
+
+.videos {
+  margin-left: 15px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+#solar, #wind, #geothermal, #bioenergy, #hydroelectric{
+  scroll-margin-top: 110px;
+}
+/* 
+.regie-container{
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content:center;
+  width: 50%;
+  margin-right: auto;
+} */
+/* 
+.regie-image{
+  width: 100px;
+  margin-left: 10%;
+}
+
+.regie-image1{
+  width:100px;
+} */
+
+.botui-app-container{
+  width:100%;
+}
+
+.regie-image{
+  width: 40%;
+  align-content:center;
+}
+
+#graphgif {
+  margin-left: 35%;
+}
+
+.learn-energy{
+  width: 50%;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: var(--three);
+  color: var(--six);
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-energy:hover {
+  background-color: var(--four);
+}
+
+.HITHERE{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}

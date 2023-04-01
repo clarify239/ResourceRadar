@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>R.E.G.G.I.E</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/botui@0.3.9/build/botui.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/botui@0.3.9/build/botui-theme-default.css" />
+  <style>
+    :root {
+      --one: #E0E1DD;
+      --two: #CAD2C5;
+      --three: #A7BEA9;
+      --four: #84A98C;
+      --five: #52796F;
+      --six: #354f52;
+      --seven: #2f3e46;
+    }
+
+    html,
+    body {
+      background-color: var(--two);
+      background-image: linear-gradient(-90deg, var(--four), var(--five));
+    }
+
+    .botui-container {
+      background-color: inherit;
+    }
+
+    .botui-messages-container {}
+
+    .botui-actions-container {
+      padding: 0px 30px;
+    }
+
+    .botui-message {}
+
+    .botui-message-content.text {
+      background-color: one;
+      color: var(--seven);
+    }
+
+    .botui-message-content.human {
+      background-color: var(--two);
+      color: var(--seven);
+    }
+
+    .botui-message-content.embed {}
+
+    .botui-message-content-link {}
+
+    .botui-actions-text-input {}
+
+    .botui-actions-text-submit {}
+
+    button.botui-actions-buttons-button {
+      margin-top: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/index.html">
+        <img class="logo" src="logo.PNG">
+      </a>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/information.html">Information</a></li>
+        <li><a href="/survey.html">Survey</a></li>
+        <li><a href="/resources.html">Resources</a></li>
+        <li><a href="/contact-us.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <div class="reggie"></div>
+
+  <div class="pizza"></div>
+
+  <!--   <container class = "regie-container">
+    <div>
+    <img class = "regie-image" src = "regie.png">
+  </div> -->
+  <div class="botui-app-container" id="help-bot">
+    <bot-ui></bot-ui>
+  </div>
+  <!--   <div>
+    <img class = "regie-image1" src = "regie1.png">
+  </div>
+  </container>
+   -->
+  <!-- use Vue version 2.0.5 for HTML embeds | https://github.com/botui/botui/issues/103-->
+  <!-- remove .min from the file name to use in development mode -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/botui@0.3.9/build/botui.min.js"></script>
+  <script src="./bot-script.js"></script>
+  <script></script>
+
+  <div>
+    <a href="/information.html">
+      <button class="learn-energy">Learn more about your renewable energy today!</button>
+    </a>
+  </div>
+
+  <!--   <img class = "HITHERE" src = "regie.png">
+   -->
+
+  <footer>
+    <p>&copy; Resource Radar</p>
+    <p class="tiny">MIT License
+
+      Copyright (c) 2019 Peter
+
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software.
+
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+      SOFTWARE.
+    </p>
+  </footer>
+</body>
+
+</html>
